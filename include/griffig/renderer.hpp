@@ -72,7 +72,7 @@ class Renderer {
         GLenum glewinit = glewInit();
         if (glewinit != GLEW_OK) {
             std::cout << "glew init: " << glewinit << std::endl;
-            exit(EXIT_FAILURE);
+            //exit(EXIT_FAILURE);
         }
 
         glGenFramebuffers(1, &egl_framebuffer);
